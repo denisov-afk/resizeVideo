@@ -119,7 +119,7 @@ class VideoresizerAmqpConsumer(consumers.AmqpConsumer):
 
             result = json.dumps(result)
             properties.app_id = 'suptitle.videoresizer'
-            properties.timestamp = datetime.datetime.now().timestamp()
+            properties.timestamp = int(datetime.datetime.now().timestamp())
 
             self._channel.basic_publish('', settings.QUEUE_STT, result, properties)
 
