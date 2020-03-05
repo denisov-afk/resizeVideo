@@ -4,7 +4,7 @@
 BROKER = 'amqp://guest:guest@localhost:5672/%2F'
 EXCHANGE = 'suptitle'
 QUEUE_IN = 'videoresizer.in'
-QUEUE_OUT = 'videoresizer.out'
+QUEUE_OUT = 'website.in'
 QUEUE_STT = 'STT.in'
 ROUTING_KEY = 'suptitle.videoresizer.in'
 APP_ID = 'suptitle.videoresizer'
